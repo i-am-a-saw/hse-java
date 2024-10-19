@@ -175,6 +175,10 @@ public class Matrix{
         return Alg_additions;
     }
 
+    public Matrix divide (Matrix m){
+        return this.multilpy(m.reverse());
+    }
+
     public void print(){
         for (int i = 0; i < rows; i++){
             for (int j = 0; j < columns; j++){
