@@ -86,7 +86,7 @@ public class Main {
             res5.print();
 
             System.out.print("Matrix 1 / Matrix 2:\n");
-            Matrix res6 = m.multilpy(n.reverse());
+            Matrix res6 = m.divide(n);
             res6.print();
         }
         catch (IllegalArgumentException | ArithmeticException e){
