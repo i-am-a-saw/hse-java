@@ -35,13 +35,19 @@ public class lab{
             System.out.println(" лет");
         }
 
-        if (patr.endsWith("ович") || l_name.endsWith("ов") || patr.endsWith("евич") || l_name.endsWith("ев") || patr.endsWith("ич") || patr.endsWith("ыч")){
+        if (patr.endsWith("ович") ||  patr.endsWith("евич")  || patr.endsWith("ич") || patr.endsWith("ыч")){
             System.out.println("Пол: мужской");
         }
-        else if (l_name.endsWith("ова") || patr.endsWith("овна") || patr.endsWith("евна") || l_name.endsWith("ева") || patr.endsWith("чна")){
+        else if (patr.endsWith("овна") || patr.endsWith("евна")  || patr.endsWith("чна")){
             System.out.println("Пол: женский");
         }
-        else{
+        else if (l_name.endsWith("ов") || l_name.endsWith("ев")) {
+            System.out.println("Пол: мужской");
+        }
+        else if (l_name.endsWith("ова") || l_name.endsWith("ева")){
+            System.out.println("Пол: женский");
+        }
+        else {
             System.out.println("Пол определить не удалось :(");
         }
     }
